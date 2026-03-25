@@ -317,8 +317,11 @@ header nav {
         display: none;
     }
 
-    /* 光暈移到畫面中間 */
-    .carousel .list::after {
-       display: none;
+  .carousel .list::after {
+        display: none;
+    }
+
+    .carousel .list .item.active {
+        z-index: 5;
     }
 }
