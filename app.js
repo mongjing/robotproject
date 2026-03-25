@@ -40,22 +40,9 @@ const changeSlider = () => {
     clearInterval(autoPlay);
     autoPlay = setInterval(() => {
         next.click();
-    }, 15000);
+    }, 10000);
 }
 
 let autoPlay = setInterval(() => {
     next.click();
-}, 7000);
-const navLinks = document.querySelectorAll('header nav a');
-const infoPanel = document.querySelector('.info-panel');
-
-navLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const activeItem = document.querySelector('.carousel .item.active');
-        document.getElementById('panel-title').textContent = activeItem.querySelector('h2').textContent;
-        document.getElementById('panel-price').textContent = activeItem.querySelector('.price').textContent;
-        document.getElementById('panel-desc').textContent = activeItem.querySelector('.description').textContent;
-        infoPanel.classList.toggle('open');
-    });
-});
+}, 5000);

@@ -157,7 +157,7 @@ header nav {
 }
 
 .carousel .list .item .main-content .content .addToCard {
-    background-color: #4f8b69;
+    background-color: #FFFFFF;
     color: #fff;
     padding: 10px 30px;
     font-family: Poppins;
@@ -282,26 +282,7 @@ header nav {
         font-size: 3em;
     }
 }
-@media screen and (max-width: 767px) {
-    .info-panel {
-        position: fixed;
-        bottom: -100%;
-        left: 0;
-        width: 100%;
-        height: 50%;
-        background-color: inherit;
-        z-index: 100;
-        padding: 30px;
-        transition: 0.3s;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
 
-    .info-panel.open {
-        bottom: 0;
-    }
-}
 
 @media screen and (max-width: 767px) {
     .carousel .list .item .image {
@@ -314,7 +295,6 @@ header nav {
         color: #fff;
         width: 100%;
         text-align: center;
-         display: none;
     }
 
     .carousel .list .item .main-content .content {
@@ -335,10 +315,5 @@ header nav {
     .carousel .list .item.other_1,
     .carousel .list .item.other_2 {
         display: none;
-    }
-
-    .arrows {
-        left: 50%;
-        justify-content: center;
     }
 }
