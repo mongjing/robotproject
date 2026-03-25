@@ -89,7 +89,7 @@ header nav {
     top: 50px;
     left: 50px;
     content: '';
-    background-color: #E50900;
+    background-color: red;
     width: 400px;
     height: 300px;
     z-index: 10;
@@ -124,7 +124,7 @@ header nav {
 .carousel .list .item .image img {
     width: 90%;
     margin-bottom: 20px;
-    
+    filter: drop-shadow(0 150px 50px #E3686C);
 }
 .carousel .list .item .image figcaption {
     
@@ -285,15 +285,6 @@ header nav {
     }
 }
 @media screen and (max-width: 767px) {
-    .carousel .list .item .image figcaption {
-        display: block;
-        color: #fff;
-        width: 100%;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 767px) {
     .carousel .list .item .image {
         width: 100%;
         left: 0;
@@ -301,10 +292,10 @@ header nav {
     }
 
     .carousel .list .item .image figcaption {
-
         color: #fff;
         width: 100%;
         text-align: center;
+        display: none;
     }
 
     .carousel .list .item .main-content .content {
@@ -316,6 +307,7 @@ header nav {
         justify-content: center;
     }
 
+    /* 新增這兩段 */
     .carousel .list .item.other_1 .image,
     .carousel .list .item.other_2 .image {
         display: none;
@@ -324,13 +316,5 @@ header nav {
     .carousel .list .item.other_1,
     .carousel .list .item.other_2 {
         display: none;
-    }
-
-  .carousel .list::after {
-        display: none;
-    }
-
-    .carousel .list .item.active {
-        z-index:5;
     }
 }
